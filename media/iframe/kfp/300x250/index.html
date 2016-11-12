@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>
+
+	<style type="text/css">
+		#container {
+			display: none;
+		}
+	</style>
+
+	<!-- DC polite load script -->
+	<script type="text/javascript">
+		var clickTag = "https://www.google.com/";
+	</script>
+
+	<script language="javascript">
+		if (Enabler.isInitialized()) {
+			init();
+		} else {
+			Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+		}
+
+		function init() {
+			if (Enabler.isPageLoaded()) {
+				politeInit();
+			} else {
+				Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+			}
+		}
+
+		function politeInit() {
+			var extJavascript = document.createElement('script');
+			extJavascript.setAttribute('type', 'text/javascript');
+			extJavascript.setAttribute('src', Enabler.getUrl('js/main.js'));
+			document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+			var extCSS = document.createElement('link');
+			extCSS.setAttribute("rel", "stylesheet");
+			extCSS.setAttribute("type", "text/css");
+			extCSS.setAttribute("href", Enabler.getUrl("styles/screen.css"));
+			document.getElementsByTagName("head")[0].appendChild(extCSS);
+		}
+	</script>
+	<!-- Main styles -->
+	<link rel="stylesheet" type="text/css" href="styles/screen.css">
+</head>
+
+<body>
+	<div id="container">
+		<section id="res-c" class="resolve-c">
+			<div class="copy"></div>
+			<div class="bluray"></div>
+			<div class="fireball3"></div>
+
+			<div id="res-bg-exit" class="exit"></div>
+
+			<div id="cta" class="cta-c">
+				<div class="cta-btn"></div>
+				<div class="cta-btn-hover"></div>
+			</div>
+		</section>
+
+		<section class="intro-c">
+			<!-- Ad elements here -->
+			<div class="bg"></div>
+			<div class="top-c">
+				<div class="banner"></div>
+				<div class="tt-c">
+					<div class="panda"></div>
+					<div class="tt"></div>
+					<div class="panda-top"></div>
+				</div>
+			</div>
+
+			<div class="bottom-c">
+				<div class="po"></div>
+				<div class="fireball"></div>
+				<div class="fireball2"></div>
+				<div id="white" class="white"></div>
+			</div>
+			<!-- Ad elements here -->
+			<div id="bg-exit" class="exit"></div>
+		</section> <!-- End inner-c -->
+	</div> <!-- End container -->
+</body>
+</html>

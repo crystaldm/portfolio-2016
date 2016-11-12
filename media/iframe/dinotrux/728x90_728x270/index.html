@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<style type="text/css">
+		#container {
+			display: none;
+		}
+	</style>
+
+	<script language="javascript">
+		if (Enabler.isInitialized()) {
+			init();
+		} else {
+			Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+		}
+
+		function init() {
+			Enabler.setExpandingPixelOffsets(0, 0, 728, 270, false, false);
+
+			if (Enabler.isPageLoaded()) {
+				politeInit();
+			} else {
+				Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+			}
+		}
+
+		function politeInit() {
+			var extJavascript = document.createElement('script');
+			extJavascript.setAttribute('type', 'text/javascript');
+			extJavascript.setAttribute('src', Enabler.getUrl('js/main.js'));
+			document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+			WebFontConfig = {
+				google: {
+					families: ['Montserrat:700:latin']
+				}
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+					'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+
+			var extCSS = document.createElement('link');
+			extCSS.setAttribute("rel", "stylesheet");
+			extCSS.setAttribute("type", "text/css");
+			extCSS.setAttribute("href", Enabler.getUrl("styles/screen.css"));
+			document.getElementsByTagName("head")[0].appendChild(extCSS);
+			document.getElementById("container").style.opacity = 1;
+		}
+	</script>
+
+</head>
+
+<body class="collapsed">
+	<div id="container">
+		<div id="stripes-c" class="stripes-c"></div>
+
+		<!-- start .expanded-c -->
+		<div id="expanded-c" class="expanded-c hide">
+			<div class="inner-c">
+				<div id="e-content">
+					<div id="background-e" class="background-e"></div>
+					<div id="e-ty"></div>
+					<div id="dozer"></div>
+					<div id="e-dtrux-logo"></divv id="headline"></div>>
+					<div id="e-dworks-logo"></div>
+					<div id="e-netflix"></div>
+					<div id="headline"></div>
+				</div>
+
+						<button id="e-background-exit" class="background-exit"></button>
+
+						<div class="video-c">
+							<div class="inner-c">
+
+								<video id="video" width="282" height="164">
+									<source id="video_mp4_src" type="video/mp4" src="temp.mp4" />
+									<!-- <source id="video_ogg_src" type="video/ogg" src="video.ogg" /> -->
+									<!-- <source id="video_webm_src" type="video/webm" src="video.webm" /> -->
+								</video>
+								<div class="faux-bar-c">
+									<div id="faux-bar"></div>
+								</div>
+								<button type="button" id="audio-toggle" class=""></button>
+								<div id="v-controls-c" class="v-controls-c">
+									<button type="button" id="play-pause"></button>
+									<input type="range" id="seek-bar" value="0">
+									<!-- <button type="button" id="mute">Mute</button> -->
+								</div>
+
+								<div class="v-frame"></div>
+							</div>
+						</div><!-- END .video-c -->
+
+						<div id="e-tagline" class="tagline"><span>New series now streaming.</span></div>
+						<div id="e-cta" class="cta">
+							<div class="cta-bg"></div>
+							<div id="e-cta-txt" class="cta-txt">WATCH NOW ></div>
+						</div>
+						<button type="button" id="close"></button>
+					</div>
+				</div>
+		<!-- end .expanded-c  --->
+
+
+		<!-- start .collapsed-c -->
+		<div id="collapsed-c" class="collapsed-c">
+			<div class="inner-c">
+				<div id="content">
+					<div id="background-c" class="background-c"></div>
+					<div id="ty"></div>
+					<div id="rock"></div>
+					<div id="dtrux-logo"></div>
+					<div id="dworks-logo"></div>
+					<div id="netflix"></div>
+					<div id="revit"></div>
+				</div>
+				<button id="background-exit" class="background-exit"></button>
+
+				<div id="tagline" class="tagline"><span>New series</span><br><span>now streaming.</span></div>
+				<div id="cta" class="cta">
+					<div class="cta-bg"></div>
+					<div id="cta-txt" class="cta-txt">WATCH NOW ></div>
+				</div>
+				<button type="button" id="expand"></button>
+			</div>
+		<!-- end .collapsed-c  --->
+
+</div><!-- end of #container -->
+</body>
+
+</html>
