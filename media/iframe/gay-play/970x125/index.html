@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<style type="text/css">
+		#container {
+			display: none;
+		}
+	</style>
+
+	<script language="javascript">
+		if (Enabler.isInitialized()) {
+			init();
+		} else {
+			Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+		}
+
+		function init() {
+			if (Enabler.isPageLoaded()) {
+				politeInit();
+			} else {
+				Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+			}
+		}
+
+		function politeInit() {
+			var extJavascript = document.createElement('script');
+			extJavascript.setAttribute('type', 'text/javascript');
+			extJavascript.setAttribute('src', Enabler.getUrl('js/main.js'));
+			document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+			var extCSS = document.createElement('link');
+			extCSS.setAttribute("rel", "stylesheet");
+			extCSS.setAttribute("type", "text/css");
+			extCSS.setAttribute("href", Enabler.getUrl("styles/screen.css"));
+			document.getElementsByTagName("head")[0].appendChild(extCSS);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="container">
+
+	<section class="resolve-c">
+		<div class="bg">
+			<div class="gradient"></div>
+			<div class="dots"></div>
+		</div>
+		<div class="group"></div>
+		<div class="tt">
+			<div class="dots-left"></div>
+			<div class="dots-right"></div>
+			<div class="tt-pink"></div>
+			<div class="tt-gay"></div>
+			<div class="tt-for"></div>
+			<div class="tt-play"></div>
+			<div class="tt-starring"></div>
+			<div class="tt-rupaul"></div>
+		</div>
+		<div id="tune-in"></div>
+
+		<div id="exit" class="exit"></div>
+
+		<div id="cta" class="cta">
+			<div class="arrow"></div>
+		</div>
+	</section>
+
+	<section class="intro-c">
+		<div class="pink"></div>
+		<div class="orange"></div>
+		<div class="white">
+			<div class="gradient"></div>
+			<div class="dots"></div>
+		</div>
+		<div class="tagline-01"></div>
+		<div id="tagline-02" class="tagline-02"></div>
+
+		<div id="intro-exit" class="exit"></div>
+
+	</section>
+
+	</div> <!-- End Container -->
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<style type="text/css">
+		#container {
+			display: none;
+		}
+	</style>
+
+	<script language="javascript">
+		if (Enabler.isInitialized()) {
+			init();
+		} else {
+			Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+		}
+
+		function init() {
+			if (Enabler.isPageLoaded()) {
+				politeInit();
+			} else {
+				Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+			}
+		}
+
+		function politeInit() {
+			var extJavascript = document.createElement('script');
+			extJavascript.setAttribute('type', 'text/javascript');
+			extJavascript.setAttribute('src', Enabler.getUrl('js/main.js'));
+			document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+			var extCSS = document.createElement('link');
+			extCSS.setAttribute("rel", "stylesheet");
+			extCSS.setAttribute("type", "text/css");
+			extCSS.setAttribute("href", Enabler.getUrl("styles/screen.css"));
+			document.getElementsByTagName("head")[0].appendChild(extCSS);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<div class="inner-c">
+			<div class="bg"></div>
+			<div class="oliver"></div>
+			<div class="tt"></div>
+			<ul class="quotes">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div id="tune-in"></div>
+			<div id="exit" class="exit"></div>
+		</div>
+		<!-- end inner-c -->
+	</div>
+	<!-- end container -->
+</body>
+
+</html>

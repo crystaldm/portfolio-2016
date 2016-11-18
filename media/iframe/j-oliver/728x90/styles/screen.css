@@ -1,0 +1,371 @@
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@-moz-keyframes quote-in {
+  0% {
+    right: -300px;
+  }
+  80% {
+    right: 10px;
+  }
+  100% {
+    right: 0;
+  }
+}
+@-webkit-keyframes quote-in {
+  0% {
+    right: -300px;
+  }
+  80% {
+    right: 10px;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes quote-in {
+  0% {
+    right: -300px;
+  }
+  80% {
+    right: 10px;
+  }
+  100% {
+    right: 0;
+  }
+}
+@-moz-keyframes quote-out {
+  0% {
+    right: 0;
+  }
+  20% {
+    right: 10px;
+  }
+  100% {
+    right: -300px;
+  }
+}
+@-webkit-keyframes quote-out {
+  0% {
+    right: 0;
+  }
+  20% {
+    right: 10px;
+  }
+  100% {
+    right: -300px;
+  }
+}
+@keyframes quote-out {
+  0% {
+    right: 0;
+  }
+  20% {
+    right: 10px;
+  }
+  100% {
+    right: -300px;
+  }
+}
+@-moz-keyframes oliver-up {
+  0% {
+    bottom: -90px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-webkit-keyframes oliver-up {
+  0% {
+    bottom: -90px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes oliver-up {
+  0% {
+    bottom: -90px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-moz-keyframes tt-in {
+  0% {
+    left: -319px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes tt-in {
+  0% {
+    left: -319px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes tt-in {
+  0% {
+    left: -319px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-moz-keyframes tune-up {
+  0% {
+    bottom: -33px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@-webkit-keyframes tune-up {
+  0% {
+    bottom: -33px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+@keyframes tune-up {
+  0% {
+    bottom: -33px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+/* line 85, ../sass/screen.scss */
+#container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 728px;
+  height: 90px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #699aa1;
+  overflow: hidden;
+}
+
+/* line 96, ../sass/screen.scss */
+.inner-c {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 728px;
+  height: 90px;
+}
+
+/* line 105, ../sass/screen.scss */
+.exit {
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  width: 728px;
+  height: 90px;
+  top: 0;
+  left: 0;
+}
+
+/* line 116, ../sass/screen.scss */
+.bg, .oliver, .tt, .quote, #tune-in {
+  position: absolute;
+}
+
+/* line 120, ../sass/screen.scss */
+.bg {
+  background: url("../imgs/bg.jpg") no-repeat;
+  width: 728px;
+  height: 90px;
+  top: 0;
+  left: 0;
+}
+
+/* line 128, ../sass/screen.scss */
+.oliver {
+  background: url("../imgs/oliver.png") no-repeat;
+  width: 126px;
+  height: 90px;
+  bottom: -90px;
+  left: 300px;
+}
+/* line 135, ../sass/screen.scss */
+.start .oliver {
+  -moz-animation: oliver-up 0.2s ease-out;
+  -webkit-animation: oliver-up 0.2s ease-out;
+  animation: oliver-up 0.2s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+/* line 142, ../sass/screen.scss */
+.tt {
+  background: url("../imgs/tt.png") no-repeat;
+  width: 319px;
+  height: 90px;
+  top: 0;
+  left: -319px;
+}
+/* line 149, ../sass/screen.scss */
+.start .tt {
+  -moz-animation: tt-in 0.2s ease-out;
+  -webkit-animation: tt-in 0.2s ease-out;
+  animation: tt-in 0.2s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+/* line 156, ../sass/screen.scss */
+.quotes {
+  position: absolute;
+  width: 728px;
+  height: 90px;
+  right: 0;
+  top: 0;
+}
+/* line 163, ../sass/screen.scss */
+.quotes > li {
+  position: absolute;
+  width: 300px;
+  height: 62px;
+  right: -300px;
+  top: 0;
+}
+/* line 170, ../sass/screen.scss */
+.quotes > li:nth-child(1) {
+  background: url("../imgs/quote01.png") no-repeat;
+}
+/* line 173, ../sass/screen.scss */
+.start .quotes > li:nth-child(1) {
+  -moz-animation: quote-in 0.2s 0.5s, quote-out 0.2s ease-out 2s;
+  -webkit-animation: quote-in 0.2s 0.5s, quote-out 0.2s ease-out 2s;
+  animation: quote-in 0.2s 0.5s, quote-out 0.2s ease-out 2s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* line 178, ../sass/screen.scss */
+.quotes > li:nth-child(2) {
+  background: url("../imgs/quote02.png") no-repeat;
+}
+/* line 181, ../sass/screen.scss */
+.start .quotes > li:nth-child(2) {
+  -moz-animation: quote-in 0.2s 2.3s, quote-out 0.2s ease-out 4s;
+  -webkit-animation: quote-in 0.2s 2.3s, quote-out 0.2s ease-out 4s;
+  animation: quote-in 0.2s 2.3s, quote-out 0.2s ease-out 4s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* line 186, ../sass/screen.scss */
+.quotes > li:nth-child(3) {
+  background: url("../imgs/quote03.png") no-repeat;
+}
+/* line 189, ../sass/screen.scss */
+.start .quotes > li:nth-child(3) {
+  -moz-animation: quote-in 0.2s 4.3s;
+  -webkit-animation: quote-in 0.2s 4.3s;
+  animation: quote-in 0.2s 4.3s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 198, ../sass/screen.scss */
+#tune-in {
+  width: 279px;
+  height: 33px;
+  bottom: -33px;
+  right: 0;
+}
+/* line 204, ../sass/screen.scss */
+.start #tune-in {
+  -moz-animation: tune-up 0.2s ease-out;
+  -webkit-animation: tune-up 0.2s ease-out;
+  animation: tune-up 0.2s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -moz-animation-delay: 4.3s;
+  -webkit-animation-delay: 4.3s;
+  animation-delay: 4.3s;
+}

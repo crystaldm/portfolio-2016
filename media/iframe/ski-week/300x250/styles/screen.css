@@ -1,0 +1,1027 @@
+/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes scale-in {
+  0% {
+    -moz-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scale-in {
+  0% {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-in {
+  0% {
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  100% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes tune-scale-in {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes tune-scale-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes tune-scale-in {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-moz-keyframes slide-in {
+  0% {
+    top: 130px;
+  }
+  100% {
+    top: 110px;
+  }
+}
+@-webkit-keyframes slide-in {
+  0% {
+    top: 130px;
+  }
+  100% {
+    top: 110px;
+  }
+}
+@keyframes slide-in {
+  0% {
+    top: 130px;
+  }
+  100% {
+    top: 110px;
+  }
+}
+@-moz-keyframes slide-out {
+  0% {
+    top: 110px;
+  }
+  100% {
+    top: 90px;
+  }
+}
+@-webkit-keyframes slide-out {
+  0% {
+    top: 110px;
+  }
+  100% {
+    top: 90px;
+  }
+}
+@keyframes slide-out {
+  0% {
+    top: 110px;
+  }
+  100% {
+    top: 90px;
+  }
+}
+@-moz-keyframes ski-slide-in {
+  0% {
+    top: 210px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+@-webkit-keyframes ski-slide-in {
+  0% {
+    top: 210px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+@keyframes ski-slide-in {
+  0% {
+    top: 210px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+@-moz-keyframes ski1-slide-in {
+  0% {
+    top: 125px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+@-webkit-keyframes ski1-slide-in {
+  0% {
+    top: 125px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+@keyframes ski1-slide-in {
+  0% {
+    top: 125px;
+  }
+  100% {
+    top: 25px;
+  }
+}
+@-moz-keyframes ski2-slide-in {
+  0% {
+    top: 225px;
+  }
+  100% {
+    top: 125px;
+  }
+}
+@-webkit-keyframes ski2-slide-in {
+  0% {
+    top: 225px;
+  }
+  100% {
+    top: 125px;
+  }
+}
+@keyframes ski2-slide-in {
+  0% {
+    top: 225px;
+  }
+  100% {
+    top: 125px;
+  }
+}
+@-moz-keyframes ski-slide-out {
+  0% {
+    top: 90px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+@-webkit-keyframes ski-slide-out {
+  0% {
+    top: 90px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+@keyframes ski-slide-out {
+  0% {
+    top: 90px;
+  }
+  100% {
+    top: 80px;
+  }
+}
+@-moz-keyframes skier {
+  0% {
+    top: 0px;
+    left: 175px;
+  }
+  100% {
+    top: 30px;
+    left: 100px;
+  }
+}
+@-webkit-keyframes skier {
+  0% {
+    top: 0px;
+    left: 175px;
+  }
+  100% {
+    top: 30px;
+    left: 100px;
+  }
+}
+@keyframes skier {
+  0% {
+    top: 0px;
+    left: 175px;
+  }
+  100% {
+    top: 30px;
+    left: 100px;
+  }
+}
+@-moz-keyframes logo-large-in {
+  0% {
+    left: 160px;
+  }
+  100% {
+    left: 15px;
+  }
+}
+@-webkit-keyframes logo-large-in {
+  0% {
+    left: 160px;
+  }
+  100% {
+    left: 15px;
+  }
+}
+@keyframes logo-large-in {
+  0% {
+    left: 160px;
+  }
+  100% {
+    left: 15px;
+  }
+}
+@-moz-keyframes tagline-swipe {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 150px;
+  }
+}
+@-webkit-keyframes tagline-swipe {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 150px;
+  }
+}
+@keyframes tagline-swipe {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 150px;
+  }
+}
+@-moz-keyframes snowfall {
+  0% {
+    -moz-transform: translate(0px, -50px);
+    transform: translate(0px, -50px);
+  }
+  100% {
+    -moz-transform: translate(0px, 250px);
+    transform: translate(0px, 250px);
+  }
+}
+@-webkit-keyframes snowfall {
+  0% {
+    -webkit-transform: translate(0px, -50px);
+    transform: translate(0px, -50px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 250px);
+    transform: translate(0px, 250px);
+  }
+}
+@keyframes snowfall {
+  0% {
+    -moz-transform: translate(0px, -50px);
+    -ms-transform: translate(0px, -50px);
+    -webkit-transform: translate(0px, -50px);
+    transform: translate(0px, -50px);
+  }
+  100% {
+    -moz-transform: translate(0px, 250px);
+    -ms-transform: translate(0px, 250px);
+    -webkit-transform: translate(0px, 250px);
+    transform: translate(0px, 250px);
+  }
+}
+@-moz-keyframes snowfall2 {
+  0% {
+    -moz-transform: translate(0px, -50px);
+    transform: translate(0px, -50px);
+  }
+  100% {
+    -moz-transform: translate(0px, 65px);
+    transform: translate(0px, 65px);
+  }
+}
+@-webkit-keyframes snowfall2 {
+  0% {
+    -webkit-transform: translate(0px, -50px);
+    transform: translate(0px, -50px);
+  }
+  100% {
+    -webkit-transform: translate(0px, 65px);
+    transform: translate(0px, 65px);
+  }
+}
+@keyframes snowfall2 {
+  0% {
+    -moz-transform: translate(0px, -50px);
+    -ms-transform: translate(0px, -50px);
+    -webkit-transform: translate(0px, -50px);
+    transform: translate(0px, -50px);
+  }
+  100% {
+    -moz-transform: translate(0px, 65px);
+    -ms-transform: translate(0px, 65px);
+    -webkit-transform: translate(0px, 65px);
+    transform: translate(0px, 65px);
+  }
+}
+/* line 165, ../sass/screen.scss */
+#container {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 300px;
+  height: 250px;
+  border: thin solid #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* line 177, ../sass/screen.scss */
+.inner-c {
+  width: 300px;
+  height: 250px;
+}
+
+/* line 182, ../sass/screen.scss */
+.exit {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+/* line 192, ../sass/screen.scss */
+section {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+}
+
+/* line 200, ../sass/screen.scss */
+.cta {
+  background-image: url("../imgs/cta.jpg");
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -69px;
+  width: 137px;
+  height: 20px;
+}
+/* line 210, ../sass/screen.scss */
+.resolve-frame .cta {
+  -moz-animation: fade-in 0.3s ease-out;
+  -webkit-animation: fade-in 0.3s ease-out;
+  animation: fade-in 0.3s ease-out;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+/* line 218, ../sass/screen.scss */
+.bg {
+  -moz-animation: scale-in 5s ease-out;
+  -webkit-animation: scale-in 5s ease-out;
+  animation: scale-in 5s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-image: url("../imgs/bg.jpg");
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 230, ../sass/screen.scss */
+.frame-1, .frame-2, .frame-3 {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+}
+
+/* line 239, ../sass/screen.scss */
+.frame1 .frame-1 {
+  -moz-animation: fade-in 0.1s ease-out;
+  -webkit-animation: fade-in 0.1s ease-out;
+  animation: fade-in 0.1s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* line 244, ../sass/screen.scss */
+.frame2 .frame-1 {
+  -moz-animation: fade-out 0.1s ease-out;
+  -webkit-animation: fade-out 0.1s ease-out;
+  animation: fade-out 0.1s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 250, ../sass/screen.scss */
+.frame-2 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 253, ../sass/screen.scss */
+.frame2 .frame-2 {
+  -moz-animation: fade-in 0.1s ease-out;
+  -webkit-animation: fade-in 0.1s ease-out;
+  animation: fade-in 0.1s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* line 258, ../sass/screen.scss */
+.frame3 .frame-2 {
+  -moz-animation: fade-out -0.1s ease-out;
+  -webkit-animation: fade-out -0.1s ease-out;
+  animation: fade-out -0.1s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 264, ../sass/screen.scss */
+.frame-3 {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 267, ../sass/screen.scss */
+.frame3 .frame-3 {
+  -moz-animation: fade-in 0.1s ease-out;
+  -webkit-animation: fade-in 0.1s ease-out;
+  animation: fade-in 0.1s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+/* line 272, ../sass/screen.scss */
+.resolve-frame .frame-3 {
+  -moz-animation: fade-out 0.1s ease-out;
+  -webkit-animation: fade-out 0.1s ease-out;
+  animation: fade-out 0.1s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 278, ../sass/screen.scss */
+.lets-large, .ski-1-large, .ski-2-large, .skier-large, .tt-large, .tagline-large, .tagline-c {
+  position: absolute;
+}
+
+/* line 282, ../sass/screen.scss */
+.lets-large {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  background-image: url("../imgs/lets-large.png");
+  width: 283px;
+  height: 33px;
+  left: 10px;
+}
+/* line 289, ../sass/screen.scss */
+.frame1 .lets-large {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-animation: slide-in 0.4s ease-out 0.1s, slide-out 0.4s ease-out 0.3s;
+  -webkit-animation: slide-in 0.4s ease-out 0.1s, slide-out 0.4s ease-out 0.3s;
+  animation: slide-in 0.4s ease-out 0.1s, slide-out 0.4s ease-out 0.3s;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 296, ../sass/screen.scss */
+.ski-1-large {
+  background-image: url("../imgs/ski.svg");
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 105px;
+  left: 16px;
+}
+/* line 304, ../sass/screen.scss */
+.frame2 .ski-1-large {
+  -moz-animation: ski1-slide-in 0.6s ease-out -0.3s;
+  -webkit-animation: ski1-slide-in 0.6s ease-out -0.3s;
+  animation: ski1-slide-in 0.6s ease-out -0.3s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 310, ../sass/screen.scss */
+.ski-2-large {
+  background-image: url("../imgs/ski.svg");
+  background-repeat: no-repeat;
+  width: 169px;
+  height: 105px;
+  left: 95px;
+}
+/* line 318, ../sass/screen.scss */
+.frame2 .ski-2-large {
+  -moz-animation: ski2-slide-in 0.6s ease-out -0.1s;
+  -webkit-animation: ski2-slide-in 0.6s ease-out -0.1s;
+  animation: ski2-slide-in 0.6s ease-out -0.1s;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 324, ../sass/screen.scss */
+.skier-large {
+  background-image: url("../imgs/skier-large.png");
+  width: 100px;
+  height: 169px;
+}
+/* line 329, ../sass/screen.scss */
+.frame2 .skier-large {
+  -moz-animation: skier 0.7s ease-out;
+  -webkit-animation: skier 0.7s ease-out;
+  animation: skier 0.7s ease-out;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 335, ../sass/screen.scss */
+.tt-large {
+  background-image: url("../imgs/tt.svg");
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 146px;
+  top: 65px;
+  left: 15px;
+}
+/* line 343, ../sass/screen.scss */
+.frame3 .tt-large {
+  -moz-animation: logo-large-in 0.5s ease-out;
+  -webkit-animation: logo-large-in 0.5s ease-out;
+  animation: logo-large-in 0.5s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 349, ../sass/screen.scss */
+.tagline-large {
+  background-image: url("../imgs/tagline.svg");
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 90px;
+  bottom: 0;
+  right: 0;
+}
+
+/* line 358, ../sass/screen.scss */
+.tagline-c {
+  overflow: hidden;
+  height: 95px;
+  top: 75px;
+  right: 2px;
+}
+/* line 364, ../sass/screen.scss */
+.frame3 .tagline-c {
+  -moz-animation: tagline-swipe 0.5s ease-out;
+  -webkit-animation: tagline-swipe 0.5s ease-out;
+  animation: tagline-swipe 0.5s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 371, ../sass/screen.scss */
+.resolve {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 374, ../sass/screen.scss */
+.resolve-frame .resolve {
+  -moz-animation: fade-in 0.1s ease-out;
+  -webkit-animation: fade-in 0.1s ease-out;
+  animation: fade-in 0.1s ease-out;
+  -moz-animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+/* line 380, ../sass/screen.scss */
+.head-resolve, .tt, .tagline, .tune-bar, #tune-in {
+  position: absolute;
+}
+
+/* line 384, ../sass/screen.scss */
+.tune-bar {
+  background-color: #313949;
+  width: 300px;
+  height: 65px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+/* line 392, ../sass/screen.scss */
+.resolve-frame .tune-bar {
+  -moz-animation: fade-in 0.3s ease-out;
+  -webkit-animation: fade-in 0.3s ease-out;
+  animation: fade-in 0.3s ease-out;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+/* line 399, ../sass/screen.scss */
+#tune-in {
+  width: 300px;
+  height: 55px;
+  bottom: 0;
+  left: 0;
+}
+/* line 405, ../sass/screen.scss */
+.resolve-frame #tune-in {
+  -moz-animation: tune-scale-in 0.3s ease-out;
+  -webkit-animation: tune-scale-in 0.3s ease-out;
+  animation: tune-scale-in 0.3s ease-out;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+/* line 412, ../sass/screen.scss */
+.head-resolve {
+  background-image: url("../imgs/head-resolve.png");
+  width: 300px;
+  height: 105px;
+  top: 0;
+  left: 0;
+}
+/* line 419, ../sass/screen.scss */
+.resolve-frame .head-resolve {
+  -moz-animation: fade-in 0.3s ease-out;
+  -webkit-animation: fade-in 0.3s ease-out;
+  animation: fade-in 0.3s ease-out;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+/* line 426, ../sass/screen.scss */
+.tt {
+  background-image: url("../imgs/tt.svg");
+  background-repeat: no-repeat;
+  width: 56px;
+  height: 56px;
+  top: 115px;
+  left: 85px;
+}
+/* line 434, ../sass/screen.scss */
+.resolve-frame .tt {
+  -moz-animation: fade-in 0.3s ease-out;
+  -webkit-animation: fade-in 0.3s ease-out;
+  animation: fade-in 0.3s ease-out;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+/* line 441, ../sass/screen.scss */
+.tagline {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  background-image: url("../imgs/tagline.svg");
+  background-repeat: no-repeat;
+  width: 74px;
+  height: 56px;
+  top: 115px;
+  left: 145px;
+}
+/* line 450, ../sass/screen.scss */
+.resolve-frame .tagline {
+  -moz-animation: fade-in 0.3s ease-out;
+  -webkit-animation: fade-in 0.3s ease-out;
+  animation: fade-in 0.3s ease-out;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+/* line 457, ../sass/screen.scss */
+.snowflakes > li:nth-child(1), .snowflakes > li:nth-child(3) {
+  width: 30px;
+  height: 30px;
+}
+
+/* line 462, ../sass/screen.scss */
+.snowflakes > li:nth-child(2), .snowflakes2 > li:nth-child(4) {
+  width: 25px;
+  height: 25px;
+}
+
+/* line 467, ../sass/screen.scss */
+.snowflakes > li:nth-child(4), .snowflakes > li:nth-child(5), .snowflakes2 > li:nth-child(1), .snowflakes2 > li:nth-child(2), .snowflakes2 > li:nth-child(3), .snowflakes2 > li:nth-child(5) {
+  width: 10px;
+  height: 10px;
+}
+
+/* line 472, ../sass/screen.scss */
+.snowflakes {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 0;
+  left: 0;
+}
+/* line 479, ../sass/screen.scss */
+.snowflakes > li {
+  background-image: url("../imgs/snowflake-1.svg");
+  top: -50px;
+  position: absolute;
+}
+/* line 484, ../sass/screen.scss */
+.resolve-frame .snowflakes > li {
+  -moz-animation: snowfall 20s linear;
+  -webkit-animation: snowfall 20s linear;
+  animation: snowfall 20s linear;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-iteration-count: 2;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+/* line 490, ../sass/screen.scss */
+.snowflakes > li:nth-child(1) {
+  left: 10px;
+  -moz-animation-delay: -6s;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+/* line 496, ../sass/screen.scss */
+.snowflakes > li:nth-child(2) {
+  left: 50px;
+  -moz-animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+/* line 502, ../sass/screen.scss */
+.snowflakes > li:nth-child(3) {
+  left: 150px;
+  -moz-animation-delay: -4s;
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+}
+/* line 508, ../sass/screen.scss */
+.snowflakes > li:nth-child(4) {
+  left: 200px;
+  -moz-animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+/* line 514, ../sass/screen.scss */
+.snowflakes > li:nth-child(5) {
+  left: 260px;
+  -moz-animation-delay: -6s;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+/* line 522, ../sass/screen.scss */
+.snowflakes2 {
+  position: absolute;
+  width: 300px;
+  height: 65px;
+  bottom: 0;
+  left: 0;
+}
+/* line 529, ../sass/screen.scss */
+.snowflakes2 > li {
+  background: url("../imgs/snowflake-2.svg") no-repeat;
+  position: absolute;
+}
+/* line 533, ../sass/screen.scss */
+.resolve-frame .snowflakes2 > li {
+  -moz-animation: snowfall2 10s linear;
+  -webkit-animation: snowfall2 10s linear;
+  animation: snowfall2 10s linear;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-iteration-count: 2;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+/* line 539, ../sass/screen.scss */
+.snowflakes2 > li:nth-child(1) {
+  left: -10px;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 545, ../sass/screen.scss */
+.snowflakes2 > li:nth-child(2) {
+  left: 130px;
+  -moz-animation-delay: -2s;
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+}
+/* line 551, ../sass/screen.scss */
+.snowflakes2 > li:nth-child(3) {
+  left: 190px;
+  -moz-animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+/* line 557, ../sass/screen.scss */
+.snowflakes2 > li:nth-child(4) {
+  left: 10px;
+  -moz-animation-delay: -3s;
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+}
+/* line 563, ../sass/screen.scss */
+.snowflakes2 > li:nth-child(5) {
+  left: 242px;
+  -moz-animation-delay: -5s;
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s;
+}

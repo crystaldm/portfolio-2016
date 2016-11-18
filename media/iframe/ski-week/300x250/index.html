@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Logo Aspen Gay Ski Week 2016</title>
+</head>
+
+<script src="https://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style type="text/css">
+  #container {
+    display: none;
+  }
+</style>
+
+<script language="javascript">
+  if (Enabler.isInitialized()) {
+    init();
+  } else {
+    Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+  }
+
+  function init() {
+    if (Enabler.isPageLoaded()) {
+      politeInit();
+    } else {
+      Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+    }
+  }
+
+  function politeInit() {
+    var extJavascript = document.createElement('script');
+    extJavascript.setAttribute('type', 'text/javascript');
+    extJavascript.setAttribute('src', Enabler.getUrl('js/scripts.js'));
+    document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+    var extCSS = document.createElement('link');
+    extCSS.setAttribute("rel", "stylesheet");
+    extCSS.setAttribute("type", "text/css");
+    extCSS.setAttribute("href", Enabler.getUrl("styles/screen.css"));
+    document.getElementsByTagName("head")[0].appendChild(extCSS);
+  }
+</script>
+
+<body>
+
+  <div id="container">
+
+    <div class="inner-c">
+
+      <div class="bg"></div>
+
+      <!-- Resolve -->
+      <section class="resolve">
+
+        <ul class="snowflakes">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
+        <!-- Tune In Section -->
+        <div class="tune-bar">
+          <ul class="snowflakes2">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <div id="tune-in"></div>
+          <div id="cta" class="cta"></div>
+        </div>
+
+
+        <div class="tagline"></div>
+        <div class="tt"></div>
+        <div class="head-resolve"></div>
+
+      </section>
+
+      <!-- Intro -->
+      <section class="intro">
+
+        <!-- Frame 1 -->
+        <div class="frame-1">
+          <div class="lets-large"></div>
+        </div>
+
+        <!-- Frame 2 -->
+        <div class="frame-2">
+          <div class="ski-1-large"></div>
+          <div class="ski-2-large"></div>
+          <div class="skier-large"></div>
+        </div>
+
+        <!-- Frame 1 -->
+        <div class="frame-3">
+          <div class="tt-large"></div>
+          <div class="tagline-c">
+            <div class="tagline-large"></div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+    <!-- end inner c -->
+
+    <div id="exit" class="exit"></div>
+
+  </div>
+  <!-- end container -->
+
+</body>
+
+</html>

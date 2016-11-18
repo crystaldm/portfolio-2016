@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script>
+		EBModulesToLoad = ['Video', 'EBCMD'];
+	</script>
+	<script src="js/EBLoader.js"></script>
+	<style type="text/css">
+		#container {
+			display: none;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="styles/screen.css">
+</head>
+
+<body>
+	<div id="container">
+		<section class="resolve-c">
+
+			<div class="stripe1-c stripes-c">
+				<div class="stripe1 stripes"></div>
+			</div>
+
+			<div class="stripe2-c stripes-c">
+				<div class="stripe2 stripes"></div>
+			</div>
+
+			<div class="guy"></div>
+
+			<div class="stripe3-c stripes-c">
+				<div class="stripe3 stripes"></div>
+			</div>
+
+			<div class="stripe4-c stripes-c">
+				<div class="stripe4 stripes"></div>
+			</div>
+
+			<div class="chars1-c chars-c">
+				<div class="chars-1 chars"></div>
+			</div>
+
+			<div class="chars2-c chars-c">
+				<div class="chars-2 chars"></div>
+			</div>
+
+			<div class="res-tt"></div>
+
+			<div class="res-tunein-c">
+				<div class="res-tunein"></div>
+			</div>
+
+			<div class="res-tnt"></div>
+
+			<button id="res-exit" class="exit"></button>
+			<button id="replay"></button>
+		</section>
+
+		<section class="progressive-c">
+			<div class="prog-tt"></div>
+			<div class="prog-tunein-c"></div>
+			<div class="prog-tnt"></div>
+			<button id="prog-exit" class="exit"></button>
+
+			<div class="video-c">
+				<video id="video" class="video" width="402" height="250">
+					<source id="mp4-src" type="video/mp4" src="" />
+				</video>
+				<div id="video-controls-c" class="video-controls-c">
+					<button id="play-toggle" class=""></button>
+					<button id="audio-toggle"></button>
+					<div class="seekbar-c">
+						<div id="seekbar-bg">
+							<div id="seekbar-scrubber"></div>
+						</div>
+						<input type="range" id="seekBar" value="0">
+					</div>
+				</div>
+				<div id="click-overlay">
+					<div id="first-click" class="first-click"></div>
+				</div>
+			</div>	<!-- END .video-c -->
+			<div class="prog-guy"></div>
+		</section>
+	</div> <!-- End Container -->
+</body>
+<script src="js/main.js"></script>
+</html>
