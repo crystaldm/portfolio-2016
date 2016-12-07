@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="https://s0.2mdn.net/ads/studio/Enabler.js" type="text/javascript"></script>
+
+	<style type="text/css">
+		#container {
+			display: none;
+		}
+
+		#start-fill {
+			background-color: #000;
+			width: 970px;
+			height: 250px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	</style>
+
+	<!-- DC polite load script -->
+	<script language="javascript">
+		if (Enabler.isInitialized()) {
+			init();
+		} else {
+			Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+		}
+
+		function init() {
+			if (Enabler.isPageLoaded()) {
+				politeInit();
+			} else {
+				Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+			}
+		}
+
+		function politeInit() {
+			var extJavascript = document.createElement('script');
+			extJavascript.setAttribute('type', 'text/javascript');
+			extJavascript.setAttribute('src', Enabler.getUrl('js/main.js'));
+			document.getElementsByTagName('head')[0].appendChild(extJavascript);
+
+			var extCSS = document.createElement('link');
+			extCSS.setAttribute("rel", "stylesheet");
+			extCSS.setAttribute("type", "text/css");
+			extCSS.setAttribute("href", Enabler.getUrl("styles/screen.css"));
+			document.getElementsByTagName("head")[0].appendChild(extCSS);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<section class="inner-c">
+			<!-- Resolve -->
+			<div id="resolve-c" class="resolve-c">
+				<div class="res-inner">
+					<div class="tt-res"></div>
+					<div class="rita"></div>
+					<div class="cta"></div>
+					<div class="tunein"></div>
+				</div>
+			</div>
+
+			<!-- Intro -->
+			<div id="intro-c" class="intro-c">
+				<div class="scene-01"></div>
+				<div class="a vector-medium"></div>
+				<div class="a vector-large"></div>
+
+				<div class="scene-02"></div>
+				<div class="n vector-medium"></div>
+				<div class="n vector-large"></div>
+
+				<div class="scene-03"></div>
+				<div class="t vector-medium"></div>
+				<div class="t vector-large"></div>
+
+				<div class="scene-04"></div>
+				<div class="m vector-medium"></div>
+				<div class="m vector-large"></div>
+
+				<svg id="last-anim" class="tt-static">
+				<path d="M121.6,78.5h0.7l21,72.3H98.9L121.6,78.5z M799.6,0l-33.5,138h-0.7L731.9,0h-359v125.5h-0.7L303.8,0h-73.9
+					v200.1L157.1,0H86.4L0,234.6h72.6l10.5-33.5h74.6l9.9,33.5h62.3h12.6h55.8V106.5h0.7l72,128.2h70.3V60.1h57.9v174.5h72.3V60.1h57.6
+					v174.5h68.4V84.1h0.7L739,234.6h53.9l40.7-150.5h0.7v150.5h68.4V0H799.6z"/>
+				</svg>
+
+				<div class="tt-alt-c">
+					<svg class="tt-alt">
+					<path d="M121.6,78.5h0.7l21,72.3H98.9L121.6,78.5z M799.6,0l-33.5,138h-0.7L731.9,0h-359v125.5h-0.7L303.8,0h-73.9
+						v200.1L157.1,0H86.4L0,234.6h72.6l10.5-33.5h74.6l9.9,33.5h62.3h12.6h55.8V106.5h0.7l72,128.2h70.3V60.1h57.9v174.5h72.3V60.1h57.6
+						v174.5h68.4V84.1h0.7L739,234.6h53.9l40.7-150.5h0.7v150.5h68.4V0H799.6z"/>
+					</svg>
+				</div>
+
+				<!-- GIF sequence -->
+				<div class="pattern-seq seq-01"></div>
+				<div class="pattern-seq seq-02"></div>
+
+				<!-- ANTM lines -->
+				<div class="tt-lines seq-01"></div>
+				<div class="tt-lines seq-02"></div>
+			</div>
+
+			<div id="strobe" class="strobe-res"></div>
+
+			<div id="bg-exit" class="exit"></div>
+		</section> <!-- End inner-c -->
+	</div> <!-- End container -->
+
+	<div id="start-fill"></div>
+</body>
+</html>

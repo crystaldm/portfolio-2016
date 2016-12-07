@@ -14,14 +14,6 @@ var container,
     isMobile = false,
     vidPlaying = true;
 
-function initEB() {
-    if (!EB.isInitialized()) {
-        EB.addEventListener(EBG.EventName.EB_INITIALIZED, init);
-    } else {
-        init();
-    }
-}
-
 var today = new Date();
 var june12 = new Date(2016, 05, 13);
 var trailerUrl;
@@ -42,13 +34,6 @@ function getTuneIn() {
 }
 
 getTuneIn();
-
-Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-    get: function() {
-        return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-    },
-    configurable: true
-});
 
 function init() {
     container = document.getElementById('container');
@@ -116,17 +101,17 @@ function backgroundExit(e) {
         vidPlaying = false;
         videoEnd();
         console.log('Background Exit');
-        EB.clickthrough();
+        // EB.clickthrough();
     } else {
         console.log('Background Exit');
-        EB.clickthrough();
+        // EB.clickthrough();
     }
 }
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 function initVideo() {
-  var videoTrackingModule = new EBG.VideoModule(video);
+  // var videoTrackingModule = new EBG.VideoModule(video);
     mp4Src.src = previewUrl;
     video.load();
 }
@@ -237,4 +222,4 @@ function replayAd() {
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 
-initEB();
+init();
