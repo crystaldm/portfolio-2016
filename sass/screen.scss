@@ -539,7 +539,6 @@ p {
 
 .proj-content-c {
 	@include box-sizing(border-box);
-	// position: absolute;
 	width: 100%;
 	height: 100%;
 	overflow: scroll;
@@ -835,10 +834,27 @@ p {
 }
 
 .project-page-c {
+	.content-top {
+		a {
+			color: $color-blue;
+			font-weight: bold;
+			font-size: 12px;
+			text-decoration: none;
+			line-height: initial;
+
+			&:hover {
+				color: $light-grey;
+			}
+		}
+	}
+
 	a {
 		color: $light-grey;
 		font-size: 12px;
+		font-weight: bold;
+		text-align: center;
 		text-decoration: underline;
+		line-height: 60px;
 
 		&:hover {
 			color: $dark-grey;
@@ -960,5 +976,24 @@ p {
 		&.not-for-mobile {
 			display: none;
 		}
+	}
+}
+
+.contact-page-c {
+	@include box-sizing(border-box);
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	padding: 150px 50px 0 50px;
+}
+
+.clients-grid {
+	width: 50%;
+	height: auto;
+
+	img {
+		display: inline-block;
+		float: left;
+		// border: thin solid $light-grey;
 	}
 }
